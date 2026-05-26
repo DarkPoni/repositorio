@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国政府网 - 示例代码</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- CABECERA (Estilo Gobierno Rojo) -->
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+                <span class="logo-text">中国政府网</span>
+                <span class="logo-sub">Central People's Government of the People's Republic of China</span>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="全站搜索...">
+                <button>🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVEGACIÓN PRINCIPAL -->
+    <nav>
+        <ul>
+            <li><a href="#" class="active">首页</a></li>
+            <li><a href="#">国务院</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">政策</a></li>
+            <li><a href="#">服务</a></li>
+            <li><a href="#">互动</a></li>
+            <li><a href="#">数据</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENEDOR PRINCIPAL (Grid Layout) -->
+    <div class="container">
+        
+        <!-- COLUMNA PRINCIPAL (Noticias) -->
+        <main>
+            <section class="hero-news">
+                <img src="https://via.placeholder.com/800x400/de2910/ffffff?text=习近平主席重要讲话" alt="Noticia Principal">
+                <h2>习近平主席发表重要讲话 强调高质量发展</h2>
+                <p>新华社北京5月23日电 国家主席习近平23日出席了... <a href="#">[阅读全文]</a></p>
+            </section>
+
+            <section class="news-grid">
+                <h3>政务要闻</h3>
+                <article>
+                    <span class="date">05-23</span>
+                    <a href="#">李强主持召开国务院常务会议</a>
+                </article>
+                <article>
+                    <span class="date">05-22</span>
+                    <a href="#">中共中央办公厅 国务院办公厅印发意见</a>
+                </article>
+                <article>
+                    <span class="date">05-21</span>
+                    <a href="#">前三季度国民经济运行情况发布</a>
+                </article>
+                <article>
+                    <span class="date">05-20</span>
+                    <a href="#">我国成功发射遥感四十二号卫星</a>
+                </article>
+            </section>
+        </main>
+
+        <!-- BARRA LATERAL (Servicios y Enlaces) -->
+        <aside>
+            <div class="widget">
+                <h3>政务服务</h3>
+                <ul class="service-links">
+                    <li><a href="#">💼 企业开办</a></li>
+                    <li><a href="#">👶 生育服务</a></li>
+                    <li><a href="#">🎓 教育查询</a></li>
+                    <li><a href="#">🏥 社保医保</a></li>
+                    <li><a href="#">✈️ 出入境证件</a></li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h3>我要留言</h3>
+                <p>你对政府工作有什么建议？</p>
+                <button class="cta-button">立即留言</button>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <div class="footer-content">
+            <p>主办单位：国务院办公厅 | 运行维护单位：中国政府网运行中心</p>
+            <p>京ICP备05070218号 | 京公网安备11010202000001号</p>
+            <p>&copy; 2006-2024 中国政府网 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
