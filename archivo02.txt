@@ -1,0 +1,233 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft YaHei", "PingFang SC", "Heiti SC", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #de2910; /* Rojo Gobierno al pasar el mouse */
+}
+
+/* --- CABECERA --- */
+header {
+    background-color: #de2910; /* Rojo China */
+    color: white;
+    padding: 15px 0;
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    display: block;
+}
+
+.logo-sub {
+    font-size: 12px;
+    opacity: 0.9;
+    font-family: Arial, sans-serif; /* Fuente para inglés */
+}
+
+.search-box input {
+    padding: 8px;
+    border-radius: 4px 0 0 4px;
+    border: none;
+    outline: none;
+}
+
+.search-box button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #b52006;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+/* --- NAVEGACIÓN --- */
+nav {
+    background-color: #fff;
+    border-bottom: 2px solid #de2910;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    max-width: 1200px;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 25px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    color: #de2910;
+    background-color: #fff5f5;
+}
+
+/* --- CONTENEDOR PRINCIPAL --- */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 2 partes noticias, 1 parte sidebar */
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* --- ÁREA DE NOTICIAS (MAIN) --- */
+.hero-news {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.hero-news img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.hero-news h2 {
+    margin: 15px 0 10px 0;
+    font-size: 24px;
+    color: #222;
+}
+
+.news-grid {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.news-grid h3 {
+    border-left: 4px solid #de2910;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.news-grid article {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.news-grid article .date {
+    background: #eee;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-right: 10px;
+    color: #666;
+}
+
+/* --- BARRA LATERAL (ASIDE) --- */
+.widget {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.widget h3 {
+    border-bottom: 2px solid #de2910;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.service-links {
+    list-style: none;
+}
+
+.service-links li {
+    margin-bottom: 10px;
+}
+
+.service-links li a {
+    display: block;
+    padding: 8px;
+    background: #f9f9f9;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.service-links li a:hover {
+    background: #fff0f0;
+    color: #de2910;
+}
+
+.cta-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #de2910;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #b52006;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+    font-size: 12px;
+}
+
+/* --- RESPONSIVE (MÓVIL) --- */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Una sola columna en móvil */
+    }
+    
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
